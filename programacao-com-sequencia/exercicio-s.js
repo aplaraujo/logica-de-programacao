@@ -12,3 +12,27 @@ de eleitores; o percentual correspondente de votos nulos em relação à quantid
 eleitores e, por último, o percentual correspondente de votos em branco em relação 
 à quantidade de eleitores.
 */
+
+const votesA = 100
+const votesB = 50
+const votesC = 200
+const voidVotes = 50
+const blankVotes = 70
+
+const totalVotes = votesA + votesB + votesC + voidVotes + blankVotes
+const validVotes = votesA + votesB + votesC
+const validVotesPercent = (validVotes * 100) / totalVotes
+const votesAPercent = (votesA * 100) / totalVotes
+const votesBPercent = (votesB * 100) / totalVotes
+const votesCPercent = (votesC * 100) / totalVotes
+const voidVotesPercent = (voidVotes * 100) / totalVotes
+const blankVotesPercent = (blankVotes * 100) / totalVotes
+
+console.log(totalVotes)
+console.log(validVotes)
+console.log(validVotesPercent.toFixed(1))
+console.log(votesAPercent.toFixed(1))
+console.log(votesBPercent.toFixed(1))
+console.log(votesCPercent.toFixed(1))
+console.log(voidVotesPercent.toFixed(1))
+console.log(blankVotesPercent.toFixed(1))
