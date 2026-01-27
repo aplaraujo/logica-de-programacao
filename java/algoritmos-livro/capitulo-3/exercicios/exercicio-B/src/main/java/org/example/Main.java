@@ -16,5 +16,7 @@ public class Main {
         C = ((F - 32.0) * 5.0) / 9.0;
 
         System.out.printf("Temperatura em graus Celsius: %.1f", C);
+
+        sc.close();
     }
 }
