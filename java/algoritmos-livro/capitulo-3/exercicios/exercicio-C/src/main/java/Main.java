@@ -15,5 +15,7 @@ public class Main {
         volume = 3.14159 * (Math.pow(raio, 2) * altura);
 
         System.out.printf("Valor do volume: %.1f", volume);
+
+        sc.close();
     }
 }
