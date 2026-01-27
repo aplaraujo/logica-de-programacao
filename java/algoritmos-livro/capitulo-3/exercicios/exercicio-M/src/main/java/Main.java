@@ -14,5 +14,7 @@ public class Main {
         int D = (A * A) + (B * B) + (C * C);
 
         System.out.println("Resultado: " + D);
+
+        sc.close();
     }
 }
