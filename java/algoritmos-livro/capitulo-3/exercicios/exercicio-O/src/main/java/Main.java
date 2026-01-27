@@ -13,11 +13,12 @@ public class Main {
         System.out.print("Digite o valor de D: ");
         int D = sc.nextInt();
 
-        int P = A * C;
-        int S = B + D;
+        CalculationService service = new CalculationService();
 
-        System.out.println("Resultado da soma: " + S);
-        System.out.println("Resultado da multiplicação: " + P);
+        CalculationResult result = service.calculate(A, B, C, D);
+
+        System.out.println("Resultado da soma: " + result.getProduct());
+        System.out.println("Resultado da multiplicação: " + result.getSum());
 
         sc.close();
     }
