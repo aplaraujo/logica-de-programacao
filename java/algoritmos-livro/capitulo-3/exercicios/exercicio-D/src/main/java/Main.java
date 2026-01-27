@@ -20,5 +20,7 @@ public class Main {
         System.out.println("Tempo gasto na viagem: " + tempo);
         System.out.println("Distância percorrida: " + distancia);
         System.out.println("Quantidade de litros usada na viagem: " + String.format("%.1f", litros_usados));
+
+        sc.close();
     }
 }
