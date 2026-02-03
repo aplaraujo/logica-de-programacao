@@ -1,9 +1,10 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        PersonService service = new PersonService();
 
         String nome, genero;
         System.out.print("Digite o nome da pessoa: ");
@@ -11,7 +12,9 @@ public class Main {
         System.out.print("Digite o gênero da pessoa: ");
         genero = sc.nextLine();
 
-        System.out.println(nome + " - " + genero);
+        PersonResult result = service.displayPerson(nome, genero);
+
+        System.out.println(result.getName() + " - " + result.getGender());
 
         sc.close();
     }
