@@ -1,5 +1,7 @@
 package org.example;
 
+import java.math.BigInteger;
+
 public class Main {
     public static void main(String[] args) {
         int grao, quadro, i;
@@ -14,6 +16,6 @@ public class Main {
             i++;
         }
 
-        System.out.println(grao);
+        System.out.println(BigInteger.valueOf(grao));
     }
 }
