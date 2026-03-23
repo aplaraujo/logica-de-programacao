@@ -9,11 +9,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int option;
+        var option = -1;
 
         do {
-            System.out.println("===== Escolha uma das opções: =====");
             System.out.println("===================================");
+            System.out.println("===== Escolha uma das opções: =====");
             System.out.println("1 - Dar banho no bichinho");
             System.out.println("2 - Abastecer a máquina com água");
             System.out.println("3 - Abastecer a máquina com xampu");
@@ -23,26 +23,26 @@ public class Main {
             System.out.println("7 - Colocar o bichinho na máquina");
             System.out.println("8 - Retirar o bichinho da máquina");
             System.out.println("9 - Limpar a máquina");
-            System.out.println("0 - Sair");
+            System.out.print("0 - Sair ");
 
             option = sc.nextInt();
-        } while (option != 0);
 
-        switch (option) {
-            case 1 -> PET_MACHINE.takeAShower();
-            case 2 -> setWater();
-            case 3 -> setShampoo();
-            case 4 -> verifyWaterAmount();
-            case 5 -> verifyShampooAmount();
-            case 6 -> checkIfHasPetInMachine();
-            case 7 -> setPetInPetMachine();
-            case 8 -> PET_MACHINE.removePet();
-            case 9 -> PET_MACHINE.wash();
-            case 0 -> System.exit(0);
-            default -> System.out.println("Opção inválida");
-        }
+            switch (option) {
+                case 1 -> PET_MACHINE.takeAShower();
+                case 2 -> setWater();
+                case 3 -> setShampoo();
+                case 4 -> verifyWaterAmount();
+                case 5 -> verifyShampooAmount();
+                case 6 -> checkIfHasPetInMachine();
+                case 7 -> setPetInPetMachine();
+                case 8 -> PET_MACHINE.removePet();
+                case 9 -> PET_MACHINE.wash();
+                case 0 -> System.out.println("Saindo do programa...");
+                default -> System.out.println("Opção inválida");
+            }
+        } while(option != 0);
 
-        sc.close();
+
     }
 
     private static void setWater() {
